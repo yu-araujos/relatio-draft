@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title | default("Relatio Marketing") }}</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/main.css">
+</head>
+<body class="bg-relatio-dark text-relatio-off font-sans antialiased cursor-none">
+  
+  {% include "components/header.njk" %}
+  
+  <main> 
+    {{ content | safe }}
+  </main>
+
+  <div id="cursor" class="fixed top-0 left-0 w-2 h-2 bg-relatio-blue rounded-full pointer-events-none z-100 transition-transform duration-200 hidden md:block -translate-x-1/2 -translate-y-1/2 scale-100"></div>
+  
+  <div id="cursorRing" class="fixed top-0 left-0 w-9 h-9 border border-relatio-accent/60 rounded-full pointer-events-none z-99 transition-[width,height] duration-300 hidden md:block -translate-x-1/2 -translate-y-1/2"></div>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

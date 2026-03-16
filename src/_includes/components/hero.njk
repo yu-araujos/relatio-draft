@@ -1,0 +1,132 @@
+<section
+  class="relative w-full h-[85vh] min-h-150 flex items-center justify-center overflow-hidden"
+  id="inicio"
+>
+  <video
+    autoplay
+    loop
+    muted
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover z-0"
+  >
+    <source src="/assets/video/hero.mp4" type="video/mp4" />
+  </video>
+
+  <div class="absolute inset-0 bg-relatio-dark/80 z-10"></div>
+
+  <div class="absolute left-6 md:left-12 top-1/2 -translate-y-1/2 z-20 hidden md:flex flex-col gap-10 animate-fade-up [animation-delay:0.8s] opacity-0">
+    
+    <a href="#" class="group text-relatio-off hover:text-relatio-accent transition-all duration-300" aria-label="Instagram">
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="28" height="28" 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        stroke-width="1.2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        class="transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12"
+      >
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+      </svg>
+    </a>
+
+    <a href="#" class="group text-relatio-off hover:text-relatio-blue transition-all duration-300" aria-label="Facebook">
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="28" height="28" 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        stroke-width="1.2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        class="transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12"
+      >
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+      </svg>
+    </a>
+    
+  </div>
+
+  <div
+    class="relative z-20 flex flex-col items-center text-center px-6 max-w-5xl mx-auto"
+  >
+    <div
+      class="flex items-center gap-4 mb-6 animate-fade-up [animation-delay:0.2s] opacity-0"
+    >
+      <span class="w-8 h-px bg-relatio-blue"></span>
+      <span
+        class="text-[0.65rem] tracking-[0.24em] uppercase text-relatio-muted font-medium"
+        >Elevando o padrão</span
+      >
+      <span class="w-8 h-px bg-relatio-blue"></span>
+    </div>
+
+    <h1
+      class="font-serif text-5xl md:text-7xl lg:text-[5.5rem] leading-tight text-relatio-off mb-8 animate-fade-up [animation-delay:0.4s] opacity-0"
+    >
+      Tráfego pago que<br />
+      <em class="text-relatio-accent italic">vende</em> imóveis<span class="text-relatio-blue">.</span>
+    </h1>
+
+    <p
+      class="text-base md:text-lg text-relatio-off/80 max-w-2xl mb-12 animate-fade-up [animation-delay:0.6s] opacity-0"
+    >
+      Estratégias de mídia paga exclusivamente para imobiliárias e
+      incorporadoras que precisam de leads qualificados e resultados
+      mensuráveis.
+    </p>
+
+    <div
+      class="flex flex-col md:flex-row items-center gap-8 animate-fade-up [animation-delay:0.8s] opacity-0"
+    >
+      <a
+        href="#contato"
+        class="inline-block text-[0.75rem] tracking-[0.2em] uppercase py-4 px-10 border border-relatio-accent text-relatio-off font-medium transition-all duration-300 hover:bg-relatio-accent hover:text-relatio-dark hover:-translate-y-1 hover:scale-105"
+      >
+        Diagnóstico gratuito
+      </a>
+      <a
+        href="#resultados"
+        class="group flex items-center gap-1 text-[0.8rem] tracking-[0.2em] uppercase text-relatio-off transition-all duration-300 hover:-translate-y-1 hover:scale-105"
+      >
+        Ver resultados
+        <span
+          class="flex items-center justify-center w-8 h-8 rounded-full text-relatio-off transition-all duration-300 group-hover:text-relatio-blue group-hover:translate-x-1 group-hover:scale-110 text-sm leading-none"
+        >
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <div
+    class="absolute right-6 md:right-12 bottom-12 z-30 hidden md:flex flex-col items-end text-right animate-fade-up [animation-delay:1s] opacity-0"
+  >
+    <span
+      class="font-serif text-5xl lg:text-6xl text-relatio-accent font-bold leading-none tracking-tighter"
+    >
+      <span id="roi-number" data-target="312">0</span>%
+    </span>
+    <span
+      class="text-[0.75rem] tracking-[0.2em] uppercase text-relatio-off mt-3 max-w-30"
+      >ROI médio das campanhas</span
+    >
+  </div>
+
+  <div
+    class="absolute bottom-6 left-10 -translate-x-1/2 z-20 flex flex-col items-center gap-4 animate-fade-up [animation-delay:1.2s] opacity-0"
+  >
+    <span
+      class="text-[0.85rem] tracking-[0.3em] uppercase text-relatio-off [writing-mode:vertical-rl]"
+      >Scroll</span
+    >
+    <div
+      class="w-px h-12 bg-linear-to-t from-relatio-muted to-transparent animate-pulse"
+    ></div>
+  </div>
+</section>

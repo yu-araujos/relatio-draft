@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatio Marketing — Tráfego Pago</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/main.css">
+</head>
+<body class="bg-relatio-dark text-relatio-off font-sans antialiased cursor-none">
+  
+  <header
+  id="main-header"
+  class="fixed inset-x-0 top-0 z-50 py-6 px-8 md:px-16 transition-all duration-300 border-b border-transparent bg-transparent"
+>
+  <div class="max-w-full mx-auto flex items-center justify-between">
+    <a
+      href="/"
+      class="group font-serif text-5xl text-relatio-off tracking-wide hover:text-relatio-accent transition-colors relative z-50"
+      aria-label="Página inicial Relatio"
+    >
+      Relatio<span class="text-relatio-accent transition-all duration-300 group-hover:text-relatio-blue">.</span>
+    </a>
+
+    <button
+      id="menu-btn"
+      data-open="false"
+      class="group w-10 h-6 flex flex-col justify-between items-end relative z-50 focus:outline-none cursor-pointer"
+      aria-label="Alternar menu"
+      aria-expanded="false"
+    >
+      <span class="h-0.5 bg-relatio-off transition-all duration-300 w-1/3 group-hover:w-full group-hover:bg-relatio-accent group-data-[open=true]:w-full group-data-[open=true]:bg-relatio-blue group-data-[open=true]:rotate-45 group-data-[open=true]:translate-y-2.75"></span>
+      <span class="h-0.5 bg-relatio-off transition-all duration-300 w-1/2 group-hover:w-full group-hover:bg-relatio-accent group-data-[open=true]:opacity-0 group-data-[open=true]:-translate-x-4"></span>
+      <span class="h-0.5 bg-relatio-off transition-all duration-300 w-[calc(50%+15px)] group-hover:w-full group-hover:bg-relatio-accent group-data-[open=true]:w-full group-data-[open=true]:bg-relatio-blue group-data-[open=true]:-rotate-45 group-data-[open=true]:-translate-y-2.75"></span>
+    </button>
+  </div>
+</header>
+
+<nav
+  id="mobile-menu"
+  class="fixed inset-0  backdrop-blur-xl flex flex-col items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 z-40"
+>
+  <ul class="flex flex-col items-center gap-8 text-center">
+    <li>
+      <a href="#quem" class="menu-link font-serif text-4xl md:text-6xl text-relatio-off hover:text-relatio-accent transition-colors">Para quem</a>
+    </li>
+    <li>
+      <a href="#processo" class="menu-link font-serif text-4xl md:text-6xl text-relatio-off hover:text-relatio-accent transition-colors">Processo</a>
+    </li>
+    <li>
+      <a href="#servicos" class="menu-link font-serif text-4xl md:text-6xl text-relatio-off hover:text-relatio-accent transition-colors">Serviços</a>
+    </li>
+    <li>
+      <a href="#resultados" class="menu-link font-serif text-4xl md:text-6xl text-relatio-off hover:text-relatio-accent transition-colors">Resultados</a>
+    </li>
+  </ul>
+
+  <a
+    href="https://wa.me/5511999999999"
+    target="_blank"
+    class="mt-14 text-sm tracking-[0.2em] uppercase py-4 px-8 bg-relatio-accent text-relatio-off font-medium hover:bg-relatio-blue transition-all duration-500 ease-in-out hover:shadow-xl"
+  >
+    Diagnóstico grátis
+  </a>
+</nav>
+  
+  <main> 
+    
+<section
+  class="relative w-full h-[85vh] min-h-150 flex items-center justify-center overflow-hidden"
+  id="inicio"
+>
+  <video
+    autoplay
+    loop
+    muted
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover z-0"
+  >
+    <source src="/assets/video/hero.mp4" type="video/mp4" />
+  </video>
+
+  <div class="absolute inset-0 bg-relatio-dark/80 z-10"></div>
+
+  <div class="absolute left-6 md:left-12 top-1/2 -translate-y-1/2 z-20 hidden md:flex flex-col gap-10 animate-fade-up [animation-delay:0.8s] opacity-0">
+    
+    <a href="#" class="group text-relatio-off hover:text-relatio-accent transition-all duration-300" aria-label="Instagram">
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="28" height="28" 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        stroke-width="1.2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        class="transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12"
+      >
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+      </svg>
+    </a>
+
+    <a href="#" class="group text-relatio-off hover:text-relatio-blue transition-all duration-300" aria-label="Facebook">
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="28" height="28" 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        stroke-width="1.2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        class="transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12"
+      >
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+      </svg>
+    </a>
+    
+  </div>
+
+  <div
+    class="relative z-20 flex flex-col items-center text-center px-6 max-w-5xl mx-auto"
+  >
+    <div
+      class="flex items-center gap-4 mb-6 animate-fade-up [animation-delay:0.2s] opacity-0"
+    >
+      <span class="w-8 h-px bg-relatio-blue"></span>
+      <span
+        class="text-[0.65rem] tracking-[0.24em] uppercase text-relatio-muted font-medium"
+        >Elevando o padrão</span
+      >
+      <span class="w-8 h-px bg-relatio-blue"></span>
+    </div>
+
+    <h1
+      class="font-serif text-5xl md:text-7xl lg:text-[5.5rem] leading-tight text-relatio-off mb-8 animate-fade-up [animation-delay:0.4s] opacity-0"
+    >
+      Tráfego pago que<br />
+      <em class="text-relatio-accent italic">vende</em> imóveis<span class="text-relatio-blue">.</span>
+    </h1>
+
+    <p
+      class="text-base md:text-lg text-relatio-off/80 max-w-2xl mb-12 animate-fade-up [animation-delay:0.6s] opacity-0"
+    >
+      Estratégias de mídia paga exclusivamente para imobiliárias e
+      incorporadoras que precisam de leads qualificados e resultados
+      mensuráveis.
+    </p>
+
+    <div
+      class="flex flex-col md:flex-row items-center gap-8 animate-fade-up [animation-delay:0.8s] opacity-0"
+    >
+      <a
+        href="#contato"
+        class="inline-block text-[0.75rem] tracking-[0.2em] uppercase py-4 px-10 border border-relatio-accent text-relatio-off font-medium transition-all duration-300 hover:bg-relatio-accent hover:text-relatio-dark hover:-translate-y-1 hover:scale-105"
+      >
+        Diagnóstico gratuito
+      </a>
+      <a
+        href="#resultados"
+        class="group flex items-center gap-1 text-[0.8rem] tracking-[0.2em] uppercase text-relatio-off transition-all duration-300 hover:-translate-y-1 hover:scale-105"
+      >
+        Ver resultados
+        <span
+          class="flex items-center justify-center w-8 h-8 rounded-full text-relatio-off transition-all duration-300 group-hover:text-relatio-blue group-hover:translate-x-1 group-hover:scale-110 text-sm leading-none"
+        >
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <div
+    class="absolute right-6 md:right-12 bottom-12 z-30 hidden md:flex flex-col items-end text-right animate-fade-up [animation-delay:1s] opacity-0"
+  >
+    <span
+      class="font-serif text-5xl lg:text-6xl text-relatio-accent font-bold leading-none tracking-tighter"
+    >
+      <span id="roi-number" data-target="312">0</span>%
+    </span>
+    <span
+      class="text-[0.75rem] tracking-[0.2em] uppercase text-relatio-off mt-3 max-w-30"
+      >ROI médio das campanhas</span
+    >
+  </div>
+
+  <div
+    class="absolute bottom-6 left-10 -translate-x-1/2 z-20 flex flex-col items-center gap-4 animate-fade-up [animation-delay:1.2s] opacity-0"
+  >
+    <span
+      class="text-[0.85rem] tracking-[0.3em] uppercase text-relatio-off [writing-mode:vertical-rl]"
+      >Scroll</span
+    >
+    <div
+      class="w-px h-12 bg-linear-to-t from-relatio-muted to-transparent animate-pulse"
+    ></div>
+  </div>
+</section>
+
+<section id="quem" class="relative w-full md:py-32 px-6 md:px-12 overflow-hidden">
+  
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-start">
+    
+    <div class="lg:col-span-5 flex flex-col items-start animate-fade-up sticky top-32">
+      <div class="flex items-center gap-4 mb-6">
+        <span class="w-8 h-px bg-relatio-accent"></span>
+        <span class="text-[0.65rem] tracking-[0.24em] uppercase text-relatio-muted font-medium">Para quem é</span>
+      </div>
+      
+      <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-relatio-off leading-tight mb-8">
+        Duas frentes.<br/>Uma <em class="text-relatio-accent italic">expertise</em>.
+      </h2>
+      
+      <p class="text-relatio-off/70 text-base md:text-lg leading-relaxed mb-12 max-w-md">
+        Direcionamos toda a nossa inteligência de dados e mídia paga para o mercado imobiliário. Desenvolvemos estratégias validadas para acelerar vendas e captar leads de alto valor, respeitando o momento de cada negócio.
+      </p>
+      <div class="flex flex-col gap-3 border-t border-relatio-muted/20 pt-8 w-full max-w-md">
+        <div class="flex items-center gap-3">
+          <span class="w-1 h-1 rounded-full bg-relatio-accent/70"></span>
+          <span class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-off/60">Google Partner</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="w-1 h-1 rounded-full bg-relatio-accent/70"></span>
+          <span class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-off/60">Meta Business Partner</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="w-1 h-1 rounded-full bg-relatio-accent/70"></span>
+          <span class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-off/60">Expertise de +5 Anos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:col-span-7 flex flex-col gap-8 animate-fade-up [animation-delay:0.3s]">
+      
+      <div class="who-card group relative p-8 md:p-12 bg-relatio-dark border border-relatio-muted/20 hover:border-relatio-accent/50 transition-colors duration-500 overflow-hidden">
+        <div class="absolute inset-0 bg-linear-to-br from-relatio-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="relative z-10">
+          
+          <div class="flex justify-between items-start mb-6">
+            <h3 class="font-serif text-3xl md:text-4xl text-relatio-off group-hover:text-relatio-accent transition-colors">Para Incorporadoras</h3>
+            <span class="text-relatio-muted/20 font-serif text-5xl md:text-6xl group-hover:text-relatio-accent/20 transition-colors leading-none">01</span>
+          </div>
+          
+          <p class="text-base md:text-lg text-relatio-off/80 leading-relaxed max-w-xl mb-8">
+            Estratégias de mídia paga para lançamentos, VGV e absorção de estoque com campanhas segmentadas por perfil de comprador.
+          </p>
+
+          <ul class="flex flex-col gap-4 border-t border-relatio-muted/20 pt-8">
+            <li class="flex items-start gap-3 text-sm md:text-base text-relatio-off/70">
+              <svg class="w-5 h-5 text-relatio-accent shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Campanhas de lançamento de empreendimentos
+            </li>
+            <li class="flex items-start gap-3 text-sm md:text-base text-relatio-off/70">
+              <svg class="w-5 h-5 text-relatio-accent shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Estratégia de pré-lançamento e aquecimento
+            </li>
+            <li class="flex items-start gap-3 text-sm md:text-base text-relatio-off/70">
+              <svg class="w-5 h-5 text-relatio-accent shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Segmentação por renda e perfil de imóvel
+            </li>
+            <li class="flex items-start gap-3 text-sm md:text-base text-relatio-off/70">
+              <svg class="w-5 h-5 text-relatio-accent shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Integração com CRM imobiliário
+            </li>
+            <li class="flex items-start gap-3 text-sm md:text-base text-relatio-off/70">
+              <svg class="w-5 h-5 text-relatio-accent shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Relatórios de CPL e taxa de conversão
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="who-card group relative p-8 md:p-12 bg-relatio-dark border border-relatio-muted/20 hover:border-relatio-blue/50 transition-colors duration-500 overflow-hidden">
+        <div class="absolute inset-0 bg-linear-to-br from-relatio-blue/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        <div class="relative z-10">
+          
+          <div class="flex justify-between items-start mb-6">
+            <h3 class="font-serif text-3xl md:text-4xl text-relatio-off group-hover:text-relatio-blue transition-colors">Para Imobiliárias</h3>
+            <span class="text-relatio-muted/20 font-serif text-5xl md:text-6xl group-hover:text-relatio-blue/20 transition-colors leading-none">02</span>
+          </div>
+          
+          <p class="text-base md:text-lg text-relatio-off/80 leading-relaxed max-w-xl mb-8">
+            Geração de leads contínua para equipes de corretores com campanhas de venda, locação e captação de imóveis.
+          </p>
+
+          <ul class="flex flex-col gap-4 border-t border-relatio-muted/20 pt-8">
+            <li class="flex items-start gap-3 text-sm md:text-base text-relatio-off/70">
+              <svg class="w-5 h-5 text-relatio-blue shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Anúncios de venda e locação de imóveis
+            </li>
+            <li class="flex items-start gap-3 text-sm md:text-base text-relatio-off/70">
+              <svg class="w-5 h-5 text-relatio-blue shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Captação de proprietários e exclusividades
+            </li>
+            <li class="flex items-start gap-3 text-sm md:text-base text-relatio-off/70">
+              <svg class="w-5 h-5 text-relatio-blue shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Remarketing para visitantes do site
+            </li>
+            <li class="flex items-start gap-3 text-sm md:text-base text-relatio-off/70">
+              <svg class="w-5 h-5 text-relatio-blue shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Campanhas sazonais e de liquidação
+            </li>
+            <li class="flex items-start gap-3 text-sm md:text-base text-relatio-off/70">
+              <svg class="w-5 h-5 text-relatio-blue shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+              Dashboard com métricas em tempo real
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="processo" class="relative w-full py-24 md:py-32 bg-relatio-off overflow-hidden">
+  
+  <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+    
+    <div class="mb-16 md:mb-24 animate-fade-up">
+      <div class="flex items-center gap-4 mb-6">
+        <span class="w-8 h-px bg-relatio-blue"></span>
+        <span class="text-[0.65rem] tracking-[0.24em] uppercase text-relatio-blue font-medium">Como Trabalhamos</span>
+      </div>
+      <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-relatio-dark leading-tight">
+        Do briefing ao<br/>
+        <em class="text-relatio-accent italic">primeiro lead</em> em 7 dias.
+      </h2>
+    </div>
+
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 relative z-10">
+      
+      <div class="group">
+        <div class="relative flex items-center mb-6">
+          <div class="w-14 h-14 shrink-0 bg-relatio-off border border-relatio-dark/10 rounded-full flex items-center justify-center group-hover:border-relatio-blue transition-colors duration-500 relative z-10">
+            <span class="font-serif text-xl text-relatio-accent">01</span>
+          </div>
+          <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-14 w-[calc(100%-56px+2rem)] h-px bg-relatio-dark/15 z-0"></div>
+        </div>
+        <h4 class="font-serif text-2xl text-relatio-dark mb-4">Diagnóstico</h4>
+        <p class="text-sm md:text-base text-relatio-dark/60 leading-relaxed">
+          Análise do histórico de campanhas, concorrência, ticket médio e perfil do comprador ideal do seu empreendimento.
+        </p>
+      </div>
+
+      <div class="group">
+        <div class="relative flex items-center mb-6">
+          <div class="w-14 h-14 shrink-0 bg-relatio-off border border-relatio-dark/10 rounded-full flex items-center justify-center group-hover:border-relatio-blue transition-colors duration-500 relative z-10">
+            <span class="font-serif text-xl text-relatio-accent">02</span>
+          </div>
+          <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-14 w-[calc(100%-56px+2rem)] h-px bg-relatio-dark/15 z-0"></div>
+        </div>
+        <h4 class="font-serif text-2xl text-relatio-dark mb-4">Estratégia</h4>
+        <p class="text-sm md:text-base text-relatio-dark/60 leading-relaxed">
+          Planejamento de mídia com canais, verba ideal, segmentações e metas claras de CPL e volume de leads.
+        </p>
+      </div>
+
+      <div class="group">
+        <div class="relative flex items-center mb-6">
+          <div class="w-14 h-14 shrink-0 bg-relatio-off border border-relatio-dark/10 rounded-full flex items-center justify-center group-hover:border-relatio-blue transition-colors duration-500 relative z-10">
+            <span class="font-serif text-xl text-relatio-accent">03</span>
+          </div>
+          <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-14 w-[calc(100%-56px+2rem)] h-px bg-relatio-dark/15 z-0"></div>
+        </div>
+        <h4 class="font-serif text-2xl text-relatio-dark mb-4">Ativação</h4>
+        <p class="text-sm md:text-base text-relatio-dark/60 leading-relaxed">
+          Criação das campanhas, configuração de rastreamento e publicação com monitoramento de 48h intensivo.
+        </p>
+      </div>
+
+      <div class="group">
+        <div class="relative flex items-center mb-6">
+          <div class="w-14 h-14 shrink-0 bg-relatio-off border border-relatio-dark/10 rounded-full flex items-center justify-center group-hover:border-relatio-blue transition-colors duration-500 relative z-10">
+            <span class="font-serif text-xl text-relatio-accent">04</span>
+          </div>
+        </div>
+        <h4 class="font-serif text-2xl text-relatio-dark mb-4">Otimização</h4>
+        <p class="text-sm md:text-base text-relatio-dark/60 leading-relaxed">
+          Ciclos semanais de análise e ajuste. Você recebe relatórios claros e reuniões mensais de estratégia.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-20 md:mt-32 pt-12 md:pt-16 border-t border-relatio-dark/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
+      
+      <h3 class="font-serif text-3xl md:text-4xl lg:text-5xl text-relatio-dark max-w-2xl leading-tight">
+        Menos curiosos. Mais compradores com <br class="hidden md:block"/>
+        <em class="text-relatio-accent italic">real intenção de negócio</em>.
+      </h3>
+      
+      <a href="#contato" class="group relative inline-flex items-center justify-center px-10 py-5 bg-transparent border border-relatio-dark text-relatio-dark text-[0.7rem] tracking-[0.2em] uppercase font-medium overflow-hidden transition-colors duration-500 hover:border-relatio-accent hover:text-white shrink-0">
+        <span class="relative z-10">Agendar Diagnóstico</span>
+        <div class="absolute inset-0 bg-relatio-accent scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out z-0"></div>
+      </a>
+      
+    </div>
+
+  </div>
+</section>
+<section id="servicos" class="relative w-full py-20 md:py-32 overflow-hidden border-t">
+  
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 mb-16 md:mb-32 items-end">
+      <div class="lg:col-span-7">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="w-8 h-px bg-relatio-accent"></span>
+          <span class="text-[0.65rem] tracking-[0.24em] uppercase text-relatio-muted font-medium">Nossos serviços</span>
+        </div>
+        <h2 class="font-serif text-3xl md:text-5xl lg:text-6xl text-relatio-off leading-tight mb-6 md:mb-8">
+          Tráfego pago com<br class="hidden md:block"/>
+          <em class="text-relatio-accent italic">inteligência</em> imobiliária.
+        </h2>
+        <p class="text-relatio-off/60 text-sm md:text-lg max-w-xl leading-relaxed">
+          Não somos uma agência genérica que aprendeu a palavra "imóvel". Somos especialistas do setor com processos exclusivos para o mercado imobiliário.
+        </p>
+      </div>
+
+      <div class="lg:col-span-5 flex flex-col items-start lg:items-end">
+        <span class="font-serif text-6xl md:text-8xl text-relatio-accent leading-none mb-4">R$80M+</span>
+        <p class="text-[0.65rem] tracking-[0.18em] uppercase text-relatio-muted max-w-60 lg:text-right leading-loose">
+          em VGV impactado pelas nossas campanhas nos últimos 24 meses
+        </p>
+      </div>
+    </div>
+
+    <div class="w-full flex flex-col border-t border-relatio-muted/20">
+      
+      <div class="svc-item group relative border-b border-relatio-muted/20 py-10 md:py-16 px-2 md:px-6">
+        <div class="flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-16 relative z-10">
+          <div class="lg:col-span-5 flex items-center gap-6 md:gap-10">
+            <span class="text-relatio-muted/30 font-serif text-lg md:text-2xl group-hover:text-relatio-accent transition-colors duration-500">01</span>
+            <h3 class="font-serif text-2xl md:text-4xl text-relatio-off group-hover:translate-x-3 transition-transform duration-500">Google Ads Search & Display</h3>
+          </div>
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            <p class="text-sm md:text-base text-relatio-off/50 leading-relaxed group-hover:text-relatio-off/80 transition-colors duration-500">
+              Campanhas no Google focadas em capturar compradores com intenção de compra ativa. Remarketing e anúncios otimizados para o ciclo imobiliário.
+            </p>
+            <div class="flex flex-wrap gap-2 md:gap-3">
+              <span class="text-[9px] md:text-[10px] uppercase tracking-widest border border-relatio-muted/20 px-3 py-1 text-relatio-muted/60 group-hover:border-relatio-accent/40 group-hover:text-relatio-off transition-all">Search</span>
+              <span class="text-[9px] md:text-[10px] uppercase tracking-widest border border-relatio-muted/20 px-3 py-1 text-relatio-muted/60 group-hover:border-relatio-accent/40 group-hover:text-relatio-off transition-all">Performance Max</span>
+              <span class="text-[9px] md:text-[10px] uppercase tracking-widest border border-relatio-muted/20 px-3 py-1 text-relatio-muted/60 group-hover:border-relatio-accent/40 group-hover:text-relatio-off transition-all">YouTube</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc-item group relative border-b border-relatio-muted/20 py-10 md:py-16 px-2 md:px-6">
+        <div class="flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-16 relative z-10">
+          <div class="lg:col-span-5 flex items-center gap-6 md:gap-10">
+            <span class="text-relatio-muted/30 font-serif text-lg md:text-2xl group-hover:text-relatio-blue transition-colors duration-500">02</span>
+            <h3 class="font-serif text-2xl md:text-4xl text-relatio-off group-hover:translate-x-3 transition-transform duration-500">Facebook & Instagram Ads</h3>
+          </div>
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            <p class="text-sm md:text-base text-relatio-off/50 leading-relaxed group-hover:text-relatio-off/80 transition-colors duration-500">
+              Anúncios de alto impacto visual para gerar interesse e capturar leads qualificados através de segmentação avançada por renda e comportamento.
+            </p>
+            <div class="flex flex-wrap gap-2 md:gap-3">
+              <span class="text-[9px] md:text-[10px] uppercase tracking-widest border border-relatio-muted/20 px-3 py-1 text-relatio-muted/60 group-hover:border-relatio-blue/40 group-hover:text-relatio-off transition-all">Feed & Stories</span>
+              <span class="text-[9px] md:text-[10px] uppercase tracking-widest border border-relatio-muted/20 px-3 py-1 text-relatio-muted/60 group-hover:border-relatio-blue/40 group-hover:text-relatio-off transition-all">Reels</span>
+              <span class="text-[9px] md:text-[10px] uppercase tracking-widest border border-relatio-muted/20 px-3 py-1 text-relatio-muted/60 group-hover:border-relatio-blue/40 group-hover:text-relatio-off transition-all">WhatsApp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="svc-item group relative border-b border-relatio-muted/20 py-10 md:py-16 px-2 md:px-6">
+        <div class="flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-16 relative z-10">
+          <div class="lg:col-span-5 flex items-center gap-6 md:gap-10">
+            <span class="text-relatio-muted/30 font-serif text-lg md:text-2xl group-hover:text-relatio-accent transition-colors duration-500">03</span>
+            <h3 class="font-serif text-2xl md:text-4xl text-relatio-off group-hover:translate-x-3 transition-transform duration-500">Gestão & Otimização</h3>
+          </div>
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            <p class="text-sm md:text-base text-relatio-off/50 leading-relaxed group-hover:text-relatio-off/80 transition-colors duration-500">
+              Monitoramento diário e testes A/B constantes. Relatórios claros baseados em dados reais de conversão e integração direta com o seu CRM.
+            </p>
+            <div class="flex flex-wrap gap-2 md:gap-3">
+              <span class="text-[9px] md:text-[10px] uppercase tracking-widest border border-relatio-muted/20 px-3 py-1 text-relatio-muted/60 group-hover:border-relatio-accent/40 group-hover:text-relatio-off transition-all">Dashboards BI</span>
+              <span class="text-[9px] md:text-[10px] uppercase tracking-widest border border-relatio-muted/20 px-3 py-1 text-relatio-muted/60 group-hover:border-relatio-accent/40 group-hover:text-relatio-off transition-all">A/B Tests</span>
+              <span class="text-[9px] md:text-[10px] uppercase tracking-widest border border-relatio-muted/20 px-3 py-1 text-relatio-muted/60 group-hover:border-relatio-accent/40 group-hover:text-relatio-off transition-all">CRM Sync</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section id="resultados" class="relative w-full py-24 md:py-32 bg-relatio-off overflow-hidden">
+  
+  <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+    
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-10 mb-16 md:mb-24 animate-fade-up">
+      <div class="max-w-2xl">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="w-8 h-px bg-relatio-blue"></span>
+          <span class="text-[0.65rem] tracking-[0.24em] uppercase text-relatio-blue font-medium">Cases de Sucesso</span>
+        </div>
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-relatio-dark leading-tight mb-6">
+          Números que<br/>
+          <em class="text-relatio-accent italic">comprovam</em>.
+        </h2>
+        <p class="text-relatio-dark/60 text-sm md:text-base leading-relaxed">
+          Resultados reais de clientes reais. Sem métricas de vaidade — apenas leads qualificados, aceleração de vendas e ROI (Retorno sobre Investimento).
+        </p>
+      </div>
+      
+      <a href="#contato" class="group relative inline-flex items-center justify-center px-8 py-4 bg-relatio-dark text-relatio-off text-[0.7rem] tracking-[0.2em] uppercase font-medium overflow-hidden transition-colors duration-300 hover:bg-relatio-accent shrink-0">
+        <span class="relative z-10 group-hover:text-relatio-dark">Quero resultados assim</span>
+      </a>
+    </div>
+
+    <div id="casesCarousel" class="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3 pb-4 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+      
+      <div class="w-[85vw] sm:w-87.5 md:w-auto shrink-0 snap-center md:snap-align-none group relative bg-relatio-off border border-relatio-dark/5 p-8 md:p-12 hover:border-relatio-accent/40 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-relatio-dark/5">
+        <div class="mb-12">
+          <div class="text-[0.65rem] tracking-[0.2em] uppercase text-relatio-accent mb-4">Incorporadora · São Paulo</div>
+          <h3 class="font-serif text-2xl md:text-3xl text-relatio-dark mb-2">Lançamento Alto Padrão</h3>
+          <p class="text-sm text-relatio-dark/50">Itaim Bibi, SP — 48 unidades</p>
+        </div>
+        <div class="flex flex-col gap-8">
+          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500">
+            <div class="font-serif text-5xl md:text-6xl text-relatio-accent leading-none mb-3">R$187</div>
+            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Custo por lead qualificado</div>
+          </div>
+          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500">
+            <div class="font-serif text-4xl md:text-5xl text-relatio-dark leading-none mb-3">89%</div>
+            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Das unidades vendidas em 4 meses</div>
+          </div>
+          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500">
+            <div class="font-serif text-4xl md:text-5xl text-relatio-dark leading-none mb-3">4.2x</div>
+            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Retorno sobre investimento (Mídia)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-[85vw] sm:w-87.5 md:w-auto shrink-0 snap-center md:snap-align-none group relative bg-relatio-off border border-relatio-dark/5 p-8 md:p-12 hover:border-relatio-blue/40 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-relatio-dark/5">
+        <div class="mb-12">
+          <div class="text-[0.65rem] tracking-[0.2em] uppercase text-relatio-blue mb-4">Imobiliária · Rio de Janeiro</div>
+          <h3 class="font-serif text-2xl md:text-3xl text-relatio-dark mb-2">Grupo Casa Certa</h3>
+          <p class="text-sm text-relatio-dark/50">Barra da Tijuca, RJ</p>
+        </div>
+        <div class="flex flex-col gap-8">
+          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-blue/30 transition-colors duration-500">
+            <div class="font-serif text-5xl md:text-6xl text-relatio-blue leading-none mb-3">+340%</div>
+            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Volume de leads em 3 meses</div>
+          </div>
+          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-blue/30 transition-colors duration-500">
+            <div class="font-serif text-4xl md:text-5xl text-relatio-dark leading-none mb-3">-58%</div>
+            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Redução no custo por lead (CPL)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-[85vw] sm:w-87.5 md:w-auto shrink-0 snap-center md:snap-align-none group relative bg-relatio-off border border-relatio-dark/5 p-8 md:p-12 hover:border-relatio-accent/40 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-relatio-dark/5 md:col-span-2 lg:col-span-1">
+        <div class="mb-12">
+          <div class="text-[0.65rem] tracking-[0.2em] uppercase text-relatio-accent mb-4">Incorporadora · Campinas</div>
+          <h3 class="font-serif text-2xl md:text-3xl text-relatio-dark mb-2">Construtora Novare</h3>
+          <p class="text-sm text-relatio-dark/50">Cambuí, Campinas</p>
+        </div>
+        <div class="flex flex-col gap-8">
+          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500">
+            <div class="font-serif text-5xl md:text-6xl text-relatio-accent leading-none mb-3">1.200</div>
+            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Leads gerados no lançamento</div>
+          </div>
+          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500">
+            <div class="font-serif text-4xl md:text-5xl text-relatio-dark leading-none mb-3">100%</div>
+            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Unidades vendidas no lançamento</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="flex md:hidden justify-center items-center gap-4 mt-8">
+      <button onclick="document.getElementById('casesCarousel').scrollBy({left: -320, behavior: 'smooth'})" class="w-12 h-12 rounded-full border border-relatio-dark/10 flex items-center justify-center text-relatio-dark/60 hover:bg-relatio-accent hover:text-white hover:border-relatio-accent transition-all duration-300">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"/></svg>
+      </button>
+      <button onclick="document.getElementById('casesCarousel').scrollBy({left: 320, behavior: 'smooth'})" class="w-12 h-12 rounded-full border border-relatio-dark/10 flex items-center justify-center text-relatio-dark/60 hover:bg-relatio-accent hover:text-white hover:border-relatio-accent transition-all duration-300">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+
+  </div>
+</section>
+<section
+  id="contato"
+  class="relative w-full py-24 md:py-32 bg-relatio-accent overflow-hidden"
+>
+  <div
+    class="absolute -right-32 -top-32 w-125 h-125 border border-white/10 rounded-full pointer-events-none"
+  ></div>
+  <div
+    class="absolute -right-16 -top-16 w-75 h-75 border border-white/20 rounded-full pointer-events-none"
+  ></div>
+
+  <div
+    class="max-w-7xl mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center"
+  >
+    <div class="animate-fade-up">
+      <h2
+        class="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6"
+      >
+        Pronto para vender mais com <br class="hidden lg:block" />
+        <em class="italic text-relatio-dark">tráfego pago</em>?
+      </h2>
+      <p class="text-white/80 text-base md:text-lg leading-relaxed max-w-md">
+        Solicite um diagnóstico gratuito. Em 48h recebe uma análise das suas
+        campanhas atuais e o potencial exato de melhoria para o seu negócio.
+      </p>
+    </div>
+
+    <div class="w-full relative z-10 animate-fade-up [animation-delay:0.2s]">
+      
+      <div class="bg-relatio-dark/10 border border-white/20 p-8 md:p-12 flex flex-col items-start backdrop-blur-sm">
+        
+        <h3 class="font-serif text-2xl md:text-3xl text-white mb-4">
+          Atendimento Exclusivo
+        </h3>
+        <p class="text-white/70 text-sm md:text-base leading-relaxed mb-10">
+          Para garantirmos agilidade e confidencialidade nos dados do seu negócio, realizamos o diagnóstico inicial diretamente com um especialista através do WhatsApp.
+        </p>
+
+        <a
+          href="https://wa.me/5511999999999"
+          target="_blank"
+          class="w-full flex items-center justify-center gap-3 bg-relatio-dark text-white text-[0.7rem] md:text-[0.75rem] tracking-[0.2em] uppercase font-medium py-6 hover:bg-white hover:text-relatio-dark transition-colors duration-300"
+        >
+          <svg
+            class="w-5 h-5 fill-current"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"
+            />
+          </svg>
+          Solicitar Diagnóstico via WhatsApp
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-relatio-dark py-16 md:py-24 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 md:px-12">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16 md:mb-24">
+      
+      <div class="lg:col-span-5">
+        <a href="#" class="inline-block font-serif text-2xl text-white mb-6">
+          Relatio<span class="text-relatio-accent">.</span>
+        </a>
+        <p class="text-relatio-off/50 text-sm leading-relaxed max-w-sm">
+          Agência especializada em tráfego pago para imobiliárias e incorporadoras. Resultados mensuráveis, leads qualificados e VGV real.
+        </p>
+      </div>
+      
+      <div class="lg:col-span-2">
+        <h4 class="text-[0.65rem] tracking-[0.2em] uppercase text-white mb-6">Serviços</h4>
+        <ul class="flex flex-col gap-4">
+          <li class="text-sm text-relatio-off/50">Google Ads</li>
+          <li class="text-sm text-relatio-off/50">Meta Ads</li>
+          <li class="text-sm text-relatio-off/50">Gestão de Campanhas</li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-2">
+        <h4 class="text-[0.65rem] tracking-[0.2em] uppercase text-white mb-6">Empresa</h4>
+        <ul class="flex flex-col gap-4">
+          <li><a href="#processo" class="text-sm text-relatio-off/50 hover:text-relatio-accent transition-colors">Sobre nós</a></li>
+          <li><a href="#resultados" class="text-sm text-relatio-off/50 hover:text-relatio-accent transition-colors">Cases de Sucesso</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-3">
+        <h4 class="text-[0.65rem] tracking-[0.2em] uppercase text-white mb-6">Contato</h4>
+        <ul class="flex flex-col gap-4">
+          <li><a href="mailto:contato@relatio.com.br" class="text-sm text-relatio-off/50 hover:text-white transition-colors">contato@relatio.com.br</a></li>
+          <li><a href="#" class="text-sm text-relatio-off/50 hover:text-white transition-colors">(11) 99999-9999</a></li>
+          <li class="text-sm text-relatio-off/50">São Paulo, SP</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+      <p class="text-[0.7rem] text-relatio-off/40 tracking-wider">
+        &copy; 2026 Relatio Marketing. Todos os direitos reservados.
+      </p>
+      <div class="flex gap-6">
+        <a href="#" class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-off/40 hover:text-relatio-accent transition-colors">Instagram</a>
+        <a href="#" class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-off/40 hover:text-relatio-accent transition-colors">LinkedIn</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+  </main>
+
+  <div id="cursor" class="fixed top-0 left-0 w-2 h-2 bg-relatio-blue rounded-full pointer-events-none z-100 transition-transform duration-200 hidden md:block -translate-x-1/2 -translate-y-1/2 scale-100"></div>
+  
+  <div id="cursorRing" class="fixed top-0 left-0 w-9 h-9 border border-relatio-accent/60 rounded-full pointer-events-none z-99 transition-[width,height] duration-300 hidden md:block -translate-x-1/2 -translate-y-1/2"></div>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
