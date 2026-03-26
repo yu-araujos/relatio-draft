@@ -12,14 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function toggleMenu() {
       isMenuOpen = !isMenuOpen;
       menuBtn.setAttribute('aria-expanded', isMenuOpen);
+      menuBtn.setAttribute('data-open', isMenuOpen); 
       mobileMenu.setAttribute('aria-hidden', !isMenuOpen);
       
       if (isMenuOpen) {
         mobileMenu.classList.replace('opacity-0', 'opacity-100');
         mobileMenu.classList.replace('pointer-events-none', 'pointer-events-auto');
+        
         spans[0].classList.add('rotate-45', 'translate-y-[11px]', 'w-full');
-        spans[1].classList.add('opacity-0');
+        spans[1].classList.add('opacity-0', 'invisible', '-translate-x-8'); 
         spans[2].classList.add('-rotate-45', '-translate-y-[11px]', 'w-full');
+        
         spans.forEach(span => {
           span.classList.remove('bg-relatio-off', 'group-hover:bg-relatio-accent');
           span.classList.add('bg-relatio-blue');
@@ -28,9 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         mobileMenu.classList.replace('opacity-100', 'opacity-0');
         mobileMenu.classList.replace('pointer-events-auto', 'pointer-events-none');
+        
         spans[0].classList.remove('rotate-45', 'translate-y-[11px]', 'w-full');
-        spans[1].classList.remove('opacity-0');
+        spans[1].classList.remove('opacity-0', 'invisible', '-translate-x-8');
         spans[2].classList.remove('-rotate-45', '-translate-y-[11px]', 'w-full');
+        
         spans.forEach(span => {
           span.classList.remove('bg-relatio-blue');
           span.classList.add('bg-relatio-off', 'group-hover:bg-relatio-accent');
@@ -122,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // --- HEADER ---
+  // --- HEADER CHAMELEON ---
   const header = document.getElementById('main-header');
   
   if (header) {
@@ -142,7 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
         header.classList.add('py-6');
       }
 
-      // 2. Os Dois Radares de Posição
       const headerMid = header.getBoundingClientRect().top + (header.offsetHeight / 2); 
       const screenMid = window.innerHeight / 2; 
       
@@ -201,5 +205,4 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', updateHeaderColors);
     updateHeaderColors();
   }
-
 });

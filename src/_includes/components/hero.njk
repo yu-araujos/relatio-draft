@@ -1,5 +1,5 @@
 <section
-  class="relative w-full h-[85vh] min-h-150 flex items-center justify-center overflow-hidden"
+  class="relative w-full h-[85vh] min-h-150 flex items-center justify-center overflow-hidden pt-20 md:pt-0"
   id="inicio"
 >
   <video
@@ -9,22 +9,29 @@
     playsinline
     class="absolute inset-0 w-full h-full object-cover z-0"
   >
-    <source src="{{ '/assets/video/hero.mp4' | url }}" type="video/mp4"/>
+    <source src="{{ '/assets/video/hero.mp4' | url }}" type="video/mp4" />
   </video>
 
   <div class="absolute inset-0 bg-relatio-dark/80 z-10"></div>
 
-  <div class="absolute left-6 md:left-12 top-1/2 -translate-y-1/2 z-20 hidden md:flex flex-col gap-10 animate-fade-up [animation-delay:0.8s] opacity-0">
-    
-    <a href="#" class="group text-relatio-off hover:text-relatio-accent transition-all duration-300" aria-label="Instagram">
-      <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        width="28" height="28" 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        stroke-width="1.2" 
-        stroke-linecap="round" 
+  <div
+    class="absolute left-6 md:left-12 top-1/2 -translate-y-1/2 z-20 hidden md:flex flex-col gap-10 animate-fade-up [animation-delay:0.8s] opacity-0"
+  >
+    <a
+      href="https://www.instagram.com/relatiomarketing"
+      target="_blank"
+      class="group text-relatio-off hover:text-relatio-accent transition-all duration-300"
+      aria-label="Instagram"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.2"
+        stroke-linecap="round"
         stroke-linejoin="round"
         class="transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12"
       >
@@ -34,22 +41,31 @@
       </svg>
     </a>
 
-    <a href="#" class="group text-relatio-off hover:text-relatio-blue transition-all duration-300" aria-label="Facebook">
-      <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        width="28" height="28" 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        stroke-width="1.2" 
-        stroke-linecap="round" 
+    <a
+      href="https://www.linkedin.com/in/victoraraujomkt/"
+      target="_blank"
+      class="group text-relatio-off hover:text-relatio-blue transition-all duration-300"
+      aria-label="Facebook"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.2"
+        stroke-linecap="round"
         stroke-linejoin="round"
         class="transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12"
       >
-        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        <path
+          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+        ></path>
+        <rect x="2" y="9" width="4" height="12"></rect>
+        <circle cx="4" cy="4" r="2"></circle>
       </svg>
     </a>
-    
   </div>
 
   <div
@@ -70,7 +86,10 @@
       class="font-serif text-5xl md:text-7xl lg:text-[5.5rem] leading-tight text-relatio-off mb-8 animate-fade-up [animation-delay:0.4s] opacity-0"
     >
       Tráfego pago que<br />
-      <em class="text-relatio-accent italic">vende</em> imóveis<span class="text-relatio-blue">.</span>
+      <em class="text-relatio-accent italic">vende</em> imóveis<span
+        class="text-relatio-blue"
+        >.</span
+      >
     </h1>
 
     <p
@@ -85,14 +104,15 @@
       class="flex flex-col md:flex-row items-center gap-8 animate-fade-up [animation-delay:0.8s] opacity-0"
     >
       <a
-        href="#contato"
+        href="https://wa.link/ql2jnr"
+        target="_blank"
         class="inline-block text-[0.75rem] tracking-[0.2em] uppercase py-4 px-10 border border-relatio-accent text-relatio-off font-medium transition-all duration-300 hover:bg-relatio-accent hover:text-relatio-dark hover:-translate-y-1 hover:scale-105"
       >
         Diagnóstico gratuito
       </a>
       <a
         href="#resultados"
-        class="group flex items-center gap-1 text-[0.8rem] tracking-[0.2em] uppercase text-relatio-off transition-all duration-300 hover:-translate-y-1 hover:scale-105"
+        class="group flex items-center gap-1 text-[0.8rem] tracking-[0.2em] uppercase text-relatio-off transition-all duration-300 hover:-translate-y-1 hover:scale-105 ml-5 md:ml-0"
       >
         Ver resultados
         <span
@@ -119,7 +139,7 @@
   </div>
 
   <div
-    class="absolute bottom-6 left-10 -translate-x-1/2 z-20 flex flex-col items-center gap-4 animate-fade-up [animation-delay:1.2s] opacity-0"
+    class="hidden md:flex absolute bottom-6 left-10 -translate-x-1/2 z-20 flex-col items-center gap-4 animate-fade-up [animation-delay:1.2s] opacity-0"
   >
     <span
       class="text-[0.85rem] tracking-[0.3em] uppercase text-relatio-off [writing-mode:vertical-rl]"

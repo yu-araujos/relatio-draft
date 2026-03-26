@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/relatio-draft/main.css">
 </head>
 <body class="bg-relatio-dark text-relatio-off font-sans antialiased cursor-none">
   
@@ -71,7 +71,7 @@
   <main> 
     
 <section
-  class="relative w-full h-[85vh] min-h-150 flex items-center justify-center overflow-hidden"
+  class="relative w-full h-[85vh] min-h-150 flex items-center justify-center overflow-hidden pt-20 md:pt-0"
   id="inicio"
 >
   <video
@@ -81,22 +81,29 @@
     playsinline
     class="absolute inset-0 w-full h-full object-cover z-0"
   >
-    <source src="/assets/video/hero.mp4" type="video/mp4" />
+    <source src="/relatio-draft/assets/video/hero.mp4" type="video/mp4" />
   </video>
 
   <div class="absolute inset-0 bg-relatio-dark/80 z-10"></div>
 
-  <div class="absolute left-6 md:left-12 top-1/2 -translate-y-1/2 z-20 hidden md:flex flex-col gap-10 animate-fade-up [animation-delay:0.8s] opacity-0">
-    
-    <a href="#" class="group text-relatio-off hover:text-relatio-accent transition-all duration-300" aria-label="Instagram">
-      <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        width="28" height="28" 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        stroke-width="1.2" 
-        stroke-linecap="round" 
+  <div
+    class="absolute left-6 md:left-12 top-1/2 -translate-y-1/2 z-20 hidden md:flex flex-col gap-10 animate-fade-up [animation-delay:0.8s] opacity-0"
+  >
+    <a
+      href="https://www.instagram.com/relatiomarketing"
+      target="_blank"
+      class="group text-relatio-off hover:text-relatio-accent transition-all duration-300"
+      aria-label="Instagram"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.2"
+        stroke-linecap="round"
         stroke-linejoin="round"
         class="transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12"
       >
@@ -106,22 +113,31 @@
       </svg>
     </a>
 
-    <a href="#" class="group text-relatio-off hover:text-relatio-blue transition-all duration-300" aria-label="Facebook">
-      <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        width="28" height="28" 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        stroke-width="1.2" 
-        stroke-linecap="round" 
+    <a
+      href="https://www.linkedin.com/in/victoraraujomkt/"
+      target="_blank"
+      class="group text-relatio-off hover:text-relatio-blue transition-all duration-300"
+      aria-label="Facebook"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.2"
+        stroke-linecap="round"
         stroke-linejoin="round"
         class="transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-12"
       >
-        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+        <path
+          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+        ></path>
+        <rect x="2" y="9" width="4" height="12"></rect>
+        <circle cx="4" cy="4" r="2"></circle>
       </svg>
     </a>
-    
   </div>
 
   <div
@@ -142,7 +158,10 @@
       class="font-serif text-5xl md:text-7xl lg:text-[5.5rem] leading-tight text-relatio-off mb-8 animate-fade-up [animation-delay:0.4s] opacity-0"
     >
       Tráfego pago que<br />
-      <em class="text-relatio-accent italic">vende</em> imóveis<span class="text-relatio-blue">.</span>
+      <em class="text-relatio-accent italic">vende</em> imóveis<span
+        class="text-relatio-blue"
+        >.</span
+      >
     </h1>
 
     <p
@@ -157,14 +176,15 @@
       class="flex flex-col md:flex-row items-center gap-8 animate-fade-up [animation-delay:0.8s] opacity-0"
     >
       <a
-        href="#contato"
+        href="https://wa.link/ql2jnr"
+        target="_blank"
         class="inline-block text-[0.75rem] tracking-[0.2em] uppercase py-4 px-10 border border-relatio-accent text-relatio-off font-medium transition-all duration-300 hover:bg-relatio-accent hover:text-relatio-dark hover:-translate-y-1 hover:scale-105"
       >
         Diagnóstico gratuito
       </a>
       <a
         href="#resultados"
-        class="group flex items-center gap-1 text-[0.8rem] tracking-[0.2em] uppercase text-relatio-off transition-all duration-300 hover:-translate-y-1 hover:scale-105"
+        class="group flex items-center gap-1 text-[0.8rem] tracking-[0.2em] uppercase text-relatio-off transition-all duration-300 hover:-translate-y-1 hover:scale-105 ml-5 md:ml-0"
       >
         Ver resultados
         <span
@@ -191,7 +211,7 @@
   </div>
 
   <div
-    class="absolute bottom-6 left-10 -translate-x-1/2 z-20 flex flex-col items-center gap-4 animate-fade-up [animation-delay:1.2s] opacity-0"
+    class="hidden md:flex absolute bottom-6 left-10 -translate-x-1/2 z-20 flex-col items-center gap-4 animate-fade-up [animation-delay:1.2s] opacity-0"
   >
     <span
       class="text-[0.85rem] tracking-[0.3em] uppercase text-relatio-off [writing-mode:vertical-rl]"
@@ -203,7 +223,7 @@
   </div>
 </section>
 
-<section id="quem" class="relative w-full md:py-32 px-6 md:px-12 overflow-hidden">
+<section id="quem" class="relative w-full md:py-32 px-6 md:px-12 overflow-hidden mb-20 md:mb-0">
   
   <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-start">
     
@@ -238,7 +258,7 @@
 
     <div class="lg:col-span-7 flex flex-col gap-8 animate-fade-up [animation-delay:0.3s]">
       
-      <div class="who-card group relative p-8 md:p-12 bg-relatio-dark border border-relatio-muted/20 hover:border-relatio-accent/50 transition-colors duration-500 overflow-hidden">
+      <div class="who-card group relative p-8 md:p-12 bg-relatio-dark border border-relatio-muted/20 hover:border-relatio-accent/50 transition-colors duration-500 overflow-hidden mt-24 md:mt-0">
         <div class="absolute inset-0 bg-linear-to-br from-relatio-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         <div class="relative z-10">
           
@@ -337,51 +357,59 @@
    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 relative z-10">
       
       <div class="group">
-        <div class="relative flex items-center mb-6">
-          <div class="w-14 h-14 shrink-0 bg-relatio-off border border-relatio-dark/10 rounded-full flex items-center justify-center group-hover:border-relatio-blue transition-colors duration-500 relative z-10">
-            <span class="font-serif text-xl text-relatio-accent">01</span>
+        <div class="flex items-center md:block mb-3 md:mb-0">
+          <div class="relative flex items-center shrink-0 mr-4 md:mr-0 md:mb-6">
+            <div class="w-14 h-14 shrink-0 bg-relatio-off border border-relatio-dark/10 rounded-full flex items-center justify-center group-hover:border-relatio-blue transition-colors duration-500 relative z-10">
+              <span class="font-serif text-xl text-relatio-accent">01</span>
+            </div>
+            <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-14 w-[calc(100%-56px+2rem)] h-px bg-relatio-dark/15 z-0"></div>
           </div>
-          <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-14 w-[calc(100%-56px+2rem)] h-px bg-relatio-dark/15 z-0"></div>
+          <h4 class="font-serif text-2xl text-relatio-dark mb-0 md:mb-4">Diagnóstico</h4>
         </div>
-        <h4 class="font-serif text-2xl text-relatio-dark mb-4">Diagnóstico</h4>
         <p class="text-sm md:text-base text-relatio-dark/60 leading-relaxed">
           Análise do histórico de campanhas, concorrência, ticket médio e perfil do comprador ideal do seu empreendimento.
         </p>
       </div>
 
       <div class="group">
-        <div class="relative flex items-center mb-6">
-          <div class="w-14 h-14 shrink-0 bg-relatio-off border border-relatio-dark/10 rounded-full flex items-center justify-center group-hover:border-relatio-blue transition-colors duration-500 relative z-10">
-            <span class="font-serif text-xl text-relatio-accent">02</span>
+        <div class="flex items-center md:block mb-3 md:mb-0">
+          <div class="relative flex items-center shrink-0 mr-4 md:mr-0 md:mb-6">
+            <div class="w-14 h-14 shrink-0 bg-relatio-off border border-relatio-dark/10 rounded-full flex items-center justify-center group-hover:border-relatio-blue transition-colors duration-500 relative z-10">
+              <span class="font-serif text-xl text-relatio-accent">02</span>
+            </div>
+            <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-14 w-[calc(100%-56px+2rem)] h-px bg-relatio-dark/15 z-0"></div>
           </div>
-          <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-14 w-[calc(100%-56px+2rem)] h-px bg-relatio-dark/15 z-0"></div>
+          <h4 class="font-serif text-2xl text-relatio-dark mb-0 md:mb-4">Estratégia</h4>
         </div>
-        <h4 class="font-serif text-2xl text-relatio-dark mb-4">Estratégia</h4>
         <p class="text-sm md:text-base text-relatio-dark/60 leading-relaxed">
           Planejamento de mídia com canais, verba ideal, segmentações e metas claras de CPL e volume de leads.
         </p>
       </div>
 
       <div class="group">
-        <div class="relative flex items-center mb-6">
-          <div class="w-14 h-14 shrink-0 bg-relatio-off border border-relatio-dark/10 rounded-full flex items-center justify-center group-hover:border-relatio-blue transition-colors duration-500 relative z-10">
-            <span class="font-serif text-xl text-relatio-accent">03</span>
+        <div class="flex items-center md:block mb-3 md:mb-0">
+          <div class="relative flex items-center shrink-0 mr-4 md:mr-0 md:mb-6">
+            <div class="w-14 h-14 shrink-0 bg-relatio-off border border-relatio-dark/10 rounded-full flex items-center justify-center group-hover:border-relatio-blue transition-colors duration-500 relative z-10">
+              <span class="font-serif text-xl text-relatio-accent">03</span>
+            </div>
+            <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-14 w-[calc(100%-56px+2rem)] h-px bg-relatio-dark/15 z-0"></div>
           </div>
-          <div class="hidden lg:block absolute top-1/2 -translate-y-1/2 left-14 w-[calc(100%-56px+2rem)] h-px bg-relatio-dark/15 z-0"></div>
+          <h4 class="font-serif text-2xl text-relatio-dark mb-0 md:mb-4">Ativação</h4>
         </div>
-        <h4 class="font-serif text-2xl text-relatio-dark mb-4">Ativação</h4>
         <p class="text-sm md:text-base text-relatio-dark/60 leading-relaxed">
           Criação das campanhas, configuração de rastreamento e publicação com monitoramento de 48h intensivo.
         </p>
       </div>
 
       <div class="group">
-        <div class="relative flex items-center mb-6">
-          <div class="w-14 h-14 shrink-0 bg-relatio-off border border-relatio-dark/10 rounded-full flex items-center justify-center group-hover:border-relatio-blue transition-colors duration-500 relative z-10">
-            <span class="font-serif text-xl text-relatio-accent">04</span>
+        <div class="flex items-center md:block mb-3 md:mb-0">
+          <div class="relative flex items-center shrink-0 mr-4 md:mr-0 md:mb-6">
+            <div class="w-14 h-14 shrink-0 bg-relatio-off border border-relatio-dark/10 rounded-full flex items-center justify-center group-hover:border-relatio-blue transition-colors duration-500 relative z-10">
+              <span class="font-serif text-xl text-relatio-accent">04</span>
+            </div>
           </div>
+          <h4 class="font-serif text-2xl text-relatio-dark mb-0 md:mb-4">Otimização</h4>
         </div>
-        <h4 class="font-serif text-2xl text-relatio-dark mb-4">Otimização</h4>
         <p class="text-sm md:text-base text-relatio-dark/60 leading-relaxed">
           Ciclos semanais de análise e ajuste. Você recebe relatórios claros e reuniões mensais de estratégia.
         </p>
@@ -395,7 +423,7 @@
         <em class="text-relatio-accent italic">real intenção de negócio</em>.
       </h3>
       
-      <a href="#contato" class="group relative inline-flex items-center justify-center px-10 py-5 bg-transparent border border-relatio-dark text-relatio-dark text-[0.7rem] tracking-[0.2em] uppercase font-medium overflow-hidden transition-colors duration-500 hover:border-relatio-accent hover:text-white shrink-0">
+      <a href="https://wa.link/ql2jnr" target="_blank" class="group relative inline-flex items-center justify-center px-10 py-5 bg-transparent border border-relatio-dark text-relatio-dark text-[0.7rem] tracking-[0.2em] uppercase font-medium overflow-hidden transition-colors duration-500 hover:border-relatio-accent hover:text-white shrink-0">
         <span class="relative z-10">Agendar Diagnóstico</span>
         <div class="absolute inset-0 bg-relatio-accent scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out z-0"></div>
       </a>
@@ -419,7 +447,7 @@
           <em class="text-relatio-accent italic">inteligência</em> imobiliária.
         </h2>
         <p class="text-relatio-off/60 text-sm md:text-lg max-w-xl leading-relaxed">
-          Não somos uma agência genérica que aprendeu a palavra "imóvel". Somos especialistas do setor com processos exclusivos para o mercado imobiliário.
+          Somos especialistas do setor com processos exclusivos para o mercado imobiliário.
         </p>
       </div>
 
@@ -493,103 +521,246 @@
     </div>
   </div>
 </section>
-<section id="resultados" class="relative w-full py-24 md:py-32 bg-relatio-off overflow-hidden">
-  
+<section
+  id="resultados"
+  class="relative w-full py-24 md:py-32 bg-relatio-off overflow-hidden"
+>
   <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-    
-    <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-10 mb-16 md:mb-24 animate-fade-up">
+    <div
+      class="flex flex-col md:flex-row justify-between items-start md:items-end gap-10 mb-16 md:mb-24 animate-fade-up"
+    >
       <div class="max-w-2xl">
         <div class="flex items-center gap-4 mb-6">
           <span class="w-8 h-px bg-relatio-blue"></span>
-          <span class="text-[0.65rem] tracking-[0.24em] uppercase text-relatio-blue font-medium">Cases de Sucesso</span>
+          <span
+            class="text-[0.65rem] tracking-[0.24em] uppercase text-relatio-blue font-medium"
+            >Cases de Sucesso</span
+          >
         </div>
-        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-relatio-dark leading-tight mb-6">
-          Números que<br/>
+        <h2
+          class="font-serif text-4xl md:text-5xl lg:text-6xl text-relatio-dark leading-tight mb-6"
+        >
+          Números que<br />
           <em class="text-relatio-accent italic">comprovam</em>.
         </h2>
         <p class="text-relatio-dark/60 text-sm md:text-base leading-relaxed">
-          Resultados reais de clientes reais. Sem métricas de vaidade — apenas leads qualificados, aceleração de vendas e ROI (Retorno sobre Investimento).
+          Resultados reais de clientes reais. Sem métricas de vaidade — apenas
+          leads qualificados, aceleração de vendas e ROI (Retorno sobre
+          Investimento).
         </p>
       </div>
-      
-      <a href="#contato" class="group relative inline-flex items-center justify-center px-8 py-4 bg-relatio-dark text-relatio-off text-[0.7rem] tracking-[0.2em] uppercase font-medium overflow-hidden transition-colors duration-300 hover:bg-relatio-accent shrink-0">
-        <span class="relative z-10 group-hover:text-relatio-dark">Quero resultados assim</span>
+
+      <a
+        href="https://wa.link/ql2jnr"
+        target="_blank"
+        class="group relative inline-flex items-center justify-center px-8 py-4 bg-relatio-dark text-relatio-off text-[0.7rem] tracking-[0.2em] uppercase font-medium overflow-hidden transition-colors duration-300 hover:bg-relatio-accent shrink-0"
+      >
+        <span class="relative z-10 group-hover:text-relatio-dark"
+          >Quero resultados assim</span
+        >
       </a>
     </div>
 
-    <div id="casesCarousel" class="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3 pb-4 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-      
-      <div class="w-[85vw] sm:w-87.5 md:w-auto shrink-0 snap-center md:snap-align-none group relative bg-relatio-off border border-relatio-dark/5 p-8 md:p-12 hover:border-relatio-accent/40 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-relatio-dark/5">
+    <div
+      id="casesCarousel"
+      class="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-6 lg:gap-8 md:grid-cols-2 lg:grid-cols-3 pb-4 md:pb-0 -mx-6 px-6 md:mx-0 md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+    >
+      <div
+        class="w-[85vw] sm:w-87.5 md:w-auto shrink-0 snap-center md:snap-align-none group relative bg-relatio-off border border-relatio-dark/5 p-8 md:p-12 hover:border-relatio-accent/40 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-relatio-dark/5"
+      >
         <div class="mb-12">
-          <div class="text-[0.65rem] tracking-[0.2em] uppercase text-relatio-accent mb-4">Incorporadora · São Paulo</div>
-          <h3 class="font-serif text-2xl md:text-3xl text-relatio-dark mb-2">Lançamento Alto Padrão</h3>
-          <p class="text-sm text-relatio-dark/50">Itaim Bibi, SP — 48 unidades</p>
+          <div
+            class="text-[0.65rem] tracking-[0.2em] uppercase text-relatio-accent mb-4"
+          >
+            Incorporadora · São Paulo
+          </div>
+          <h3 class="font-serif text-2xl md:text-3xl text-relatio-dark mb-2">
+            Lançamento Alto Padrão
+          </h3>
+          <p class="text-sm text-relatio-dark/50">
+            Itaim Bibi, SP — 48 unidades
+          </p>
         </div>
         <div class="flex flex-col gap-8">
-          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500">
-            <div class="font-serif text-5xl md:text-6xl text-relatio-accent leading-none mb-3">R$187</div>
-            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Custo por lead qualificado</div>
+          <div
+            class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500"
+          >
+            <div
+              class="font-serif text-5xl md:text-6xl text-relatio-accent leading-none mb-3"
+            >
+              R$68,00
+            </div>
+            <div
+              class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60"
+            >
+              Custo por lead qualificado
+            </div>
           </div>
-          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500">
-            <div class="font-serif text-4xl md:text-5xl text-relatio-dark leading-none mb-3">89%</div>
-            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Das unidades vendidas em 4 meses</div>
-          </div>
-          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500">
-            <div class="font-serif text-4xl md:text-5xl text-relatio-dark leading-none mb-3">4.2x</div>
-            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Retorno sobre investimento (Mídia)</div>
+          <div
+            class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500"
+          >
+            <div
+              class="font-serif text-4xl md:text-5xl text-relatio-dark leading-none mb-3"
+            >
+              45%
+            </div>
+            <div
+              class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60"
+            >
+              Das unidades vendidas em 8 meses
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="w-[85vw] sm:w-87.5 md:w-auto shrink-0 snap-center md:snap-align-none group relative bg-relatio-off border border-relatio-dark/5 p-8 md:p-12 hover:border-relatio-blue/40 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-relatio-dark/5">
+      <div
+        class="w-[85vw] sm:w-87.5 md:w-auto shrink-0 snap-center md:snap-align-none group relative bg-relatio-off border border-relatio-dark/5 p-8 md:p-12 hover:border-relatio-blue/40 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-relatio-dark/5"
+      >
         <div class="mb-12">
-          <div class="text-[0.65rem] tracking-[0.2em] uppercase text-relatio-blue mb-4">Imobiliária · Rio de Janeiro</div>
-          <h3 class="font-serif text-2xl md:text-3xl text-relatio-dark mb-2">Grupo Casa Certa</h3>
-          <p class="text-sm text-relatio-dark/50">Barra da Tijuca, RJ</p>
-        </div>
-        <div class="flex flex-col gap-8">
-          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-blue/30 transition-colors duration-500">
-            <div class="font-serif text-5xl md:text-6xl text-relatio-blue leading-none mb-3">+340%</div>
-            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Volume de leads em 3 meses</div>
+          <div
+            class="text-[0.65rem] tracking-[0.2em] uppercase text-relatio-blue mb-4"
+          >
+            Imobiliária · São Paulo
           </div>
-          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-blue/30 transition-colors duration-500">
-            <div class="font-serif text-4xl md:text-5xl text-relatio-dark leading-none mb-3">-58%</div>
-            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Redução no custo por lead (CPL)</div>
+          <h3 class="font-serif text-2xl md:text-3xl text-relatio-dark mb-2">
+            Locações de Apartamentos
+          </h3>
+          <p class="text-sm text-relatio-dark/50">Zona Norte, São Paulo</p>
+        </div>
+
+        <div class="flex flex-col gap-8">
+          <div
+            class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-blue/30 transition-colors duration-500"
+          >
+            <div
+              class="font-serif text-5xl md:text-6xl text-relatio-blue leading-none mb-3"
+            >
+              15
+            </div>
+            <div
+              class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60"
+            >
+              Imóveis locados em 5 meses
+            </div>
+          </div>
+
+          <div
+            class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-blue/30 transition-colors duration-500"
+          >
+            <div
+              class="font-serif text-4xl md:text-5xl text-relatio-dark leading-none mb-3"
+            >
+              <span class="text-2xl md:text-3xl text-relatio-dark/70">R$</span>
+              14,07
+            </div>
+            <div
+              class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60"
+            >
+              Custo por lead (313 leads gerados)
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="w-[85vw] sm:w-87.5 md:w-auto shrink-0 snap-center md:snap-align-none group relative bg-relatio-off border border-relatio-dark/5 p-8 md:p-12 hover:border-relatio-accent/40 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-relatio-dark/5 md:col-span-2 lg:col-span-1">
+      <div
+        class="w-[85vw] sm:w-87.5 md:w-auto shrink-0 snap-center md:snap-align-none group relative bg-relatio-off border border-relatio-dark/5 p-8 md:p-12 hover:border-relatio-accent/40 transition-all duration-500 hover:-translate-y-2 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-relatio-dark/5 md:col-span-2 lg:col-span-1"
+      >
         <div class="mb-12">
-          <div class="text-[0.65rem] tracking-[0.2em] uppercase text-relatio-accent mb-4">Incorporadora · Campinas</div>
-          <h3 class="font-serif text-2xl md:text-3xl text-relatio-dark mb-2">Construtora Novare</h3>
-          <p class="text-sm text-relatio-dark/50">Cambuí, Campinas</p>
-        </div>
-        <div class="flex flex-col gap-8">
-          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500">
-            <div class="font-serif text-5xl md:text-6xl text-relatio-accent leading-none mb-3">1.200</div>
-            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Leads gerados no lançamento</div>
+          <div
+            class="text-[0.65rem] tracking-[0.2em] uppercase text-relatio-accent mb-4"
+          >
+            Incorporadora · São Paulo
           </div>
-          <div class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500">
-            <div class="font-serif text-4xl md:text-5xl text-relatio-dark leading-none mb-3">100%</div>
-            <div class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60">Unidades vendidas no lançamento</div>
+          <h3 class="font-serif text-2xl md:text-3xl text-relatio-dark mb-2">
+            Lançamento Popular
+          </h3>
+          <p class="text-sm text-relatio-dark/50">São Paulo, SP</p>
+        </div>
+
+        <div class="flex flex-col gap-8">
+          <div
+            class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500"
+          >
+            <div
+              class="font-serif text-5xl md:text-6xl text-relatio-accent leading-none mb-3"
+            >
+              65%
+            </div>
+            <div
+              class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60"
+            >
+              De unidades vendidas
+            </div>
+          </div>
+
+          <div
+            class="border-t border-relatio-dark/10 pt-6 group-hover:border-relatio-accent/30 transition-colors duration-500"
+          >
+            <div
+              class="font-serif text-4xl md:text-5xl text-relatio-dark leading-none mb-3"
+            >
+              <span class="text-2xl md:text-3xl text-relatio-dark/70">R$</span>
+              6,65
+            </div>
+            <div
+              class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-dark/60"
+            >
+              Custo por lead (349 leads gerados)
+            </div>
           </div>
         </div>
       </div>
-
     </div>
 
     <div class="flex md:hidden justify-center items-center gap-4 mt-8">
-      <button onclick="document.getElementById('casesCarousel').scrollBy({left: -320, behavior: 'smooth'})" class="w-12 h-12 rounded-full border border-relatio-dark/10 flex items-center justify-center text-relatio-dark/60 hover:bg-relatio-accent hover:text-white hover:border-relatio-accent transition-all duration-300">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"/></svg>
+      <button
+        onclick="
+          document
+            .getElementById('casesCarousel')
+            .scrollBy({ left: -320, behavior: 'smooth' })
+        "
+        class="w-12 h-12 rounded-full border border-relatio-dark/10 flex items-center justify-center text-relatio-dark/60 hover:bg-relatio-accent hover:text-white hover:border-relatio-accent transition-all duration-300"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
       </button>
-      <button onclick="document.getElementById('casesCarousel').scrollBy({left: 320, behavior: 'smooth'})" class="w-12 h-12 rounded-full border border-relatio-dark/10 flex items-center justify-center text-relatio-dark/60 hover:bg-relatio-accent hover:text-white hover:border-relatio-accent transition-all duration-300">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7"/></svg>
+      <button
+        onclick="
+          document
+            .getElementById('casesCarousel')
+            .scrollBy({ left: 320, behavior: 'smooth' })
+        "
+        class="w-12 h-12 rounded-full border border-relatio-dark/10 flex items-center justify-center text-relatio-dark/60 hover:bg-relatio-accent hover:text-white hover:border-relatio-accent transition-all duration-300"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
       </button>
     </div>
-
   </div>
 </section>
+
 <section
   id="contato"
   class="relative w-full py-24 md:py-32 bg-relatio-accent overflow-hidden"
@@ -618,23 +789,19 @@
     </div>
 
     <div class="w-full relative z-10 animate-fade-up [animation-delay:0.2s]">
-      
-      <div class="bg-relatio-dark/10 border border-white/20 p-8 md:p-12 flex flex-col items-start backdrop-blur-sm">
-        
+      <div
+        class="bg-relatio-dark/10 border border-white/20 p-8 md:p-12 flex flex-col items-start backdrop-blur-sm"
+      >
         <h3 class="font-serif text-2xl md:text-3xl text-white mb-4">
           Atendimento Exclusivo
         </h3>
-        <p class="text-white/70 text-sm md:text-base leading-relaxed mb-10">
-          Para garantirmos agilidade e confidencialidade nos dados do seu negócio, realizamos o diagnóstico inicial diretamente com um especialista através do WhatsApp.
-        </p>
-
         <a
-          href="https://wa.me/5511999999999"
+          href="https://wa.link/ql2jnr"
           target="_blank"
-          class="w-full flex items-center justify-center gap-3 bg-relatio-dark text-white text-[0.7rem] md:text-[0.75rem] tracking-[0.2em] uppercase font-medium py-6 hover:bg-white hover:text-relatio-dark transition-colors duration-300"
+          class="w-full flex items-center justify-center gap-4 px-4 bg-relatio-dark text-white text-[0.65rem] md:text-[0.75rem] tracking-[0.15em] md:tracking-[0.2em] uppercase font-medium py-6 hover:bg-white hover:text-relatio-dark transition-colors duration-300 text-center"
         >
           <svg
-            class="w-5 h-5 fill-current"
+            class="w-6 h-6 md:w-8 md:h-8 fill-current shrink-0"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -642,13 +809,13 @@
               d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"
             />
           </svg>
-          Solicitar Diagnóstico via WhatsApp
+          <span>Solicitar Diagnóstico via WhatsApp</span>
         </a>
-
       </div>
     </div>
   </div>
 </section>
+
 
 <footer class="bg-relatio-dark py-16 md:py-24 border-t border-white/5">
   <div class="max-w-7xl mx-auto px-6 md:px-12">
@@ -684,8 +851,8 @@
       <div class="lg:col-span-3">
         <h4 class="text-[0.65rem] tracking-[0.2em] uppercase text-white mb-6">Contato</h4>
         <ul class="flex flex-col gap-4">
-          <li><a href="mailto:contato@relatio.com.br" class="text-sm text-relatio-off/50 hover:text-white transition-colors">contato@relatio.com.br</a></li>
-          <li><a href="#" class="text-sm text-relatio-off/50 hover:text-white transition-colors">(11) 99999-9999</a></li>
+          <li><a href="mailto:relatiomarketing@gmail.com" class="text-sm text-relatio-off/50 hover:text-white transition-colors">relatiomarketing@gmail.com</a></li>
+          <li><a href="https://wa.link/ql2jnr"  target="_blank" class="text-sm text-relatio-off/50 hover:text-white transition-colors">(11) 91342-1391</a></li>
           <li class="text-sm text-relatio-off/50">São Paulo, SP</li>
         </ul>
       </div>
@@ -697,8 +864,8 @@
         &copy; 2026 Relatio Marketing. Todos os direitos reservados.
       </p>
       <div class="flex gap-6">
-        <a href="#" class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-off/40 hover:text-relatio-accent transition-colors">Instagram</a>
-        <a href="#" class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-off/40 hover:text-relatio-accent transition-colors">LinkedIn</a>
+        <a href="https://www.instagram.com/relatiomarketing" target="_blank" class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-off/40 hover:text-relatio-accent transition-colors">Instagram</a>
+        <a href="https://www.linkedin.com/in/victoraraujomkt/" target="_blank" class="text-[0.65rem] tracking-[0.15em] uppercase text-relatio-off/40 hover:text-relatio-accent transition-colors">LinkedIn</a>
       </div>
     </div>
 
@@ -710,6 +877,23 @@
   
   <div id="cursorRing" class="fixed top-0 left-0 w-9 h-9 border border-relatio-accent/60 rounded-full pointer-events-none z-99 transition-[width,height] duration-300 hidden md:block -translate-x-1/2 -translate-y-1/2"></div>
 
-  <script src="/assets/js/main.js" defer></script>
+
+  <a
+  href="https://wa.link/ql2jnr"
+  target="_blank"
+  aria-label="Falar no WhatsApp"
+  class="fixed bottom-6 right-6 md:bottom-5 md:right-10 z-10 flex items-center justify-center w-10 h-10 md:w-14 md:h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group"
+>
+  <span class="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-20 group-hover:opacity-0 transition-opacity duration-300"></span>
+  
+<svg
+  class="w-full h-full p-2.5 md:p-3 fill-current relative z-10 scale-[1.2] md:scale-[1.3]"
+  viewBox="0 0 24 24"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/>
+</svg>
+</a>
+  <script src="/relatio-draft/assets/js/main.js" defer></script>
 </body>
 </html>
